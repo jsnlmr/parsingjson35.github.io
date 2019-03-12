@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.1/css/mdb.min.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Quicksand|Qwigley" rel="stylesheet">
+
+  <link rel="stylesheet" href="./src/index.css">
+  <title>Parsing JSON | Jason L. Campbell</title>
+</head>
+
+<body>
+  <!-- INTRO -->
+  <header>
+    <!-- NAVBAR -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+        <a class="navbar-brand" href="#">
+          <strong>
+            <span id='parsing'>Parsing</span>
+            <span id='json'>JSON</span>
+          </strong>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+          data-target="#nav-content" ariacontrols="nav-content"
+          aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav-content">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">My Work</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mailto:parsingjson19@gmail.com?subject=Inquiry for Parsing JSON">Contact</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto nav-flex-icons">
+              <li class="nav-item">
+                <a class="nav-link waves-effect waves-light" href='https://twitter.com/parsingjson' target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link waves-effect waves-light"
+                  href='https://github.com/parsingjson35'
+                  target='_blank'>
+                  <i class="fab fa-github-alt"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link waves-effect waves-light"
+                  href='https://fb.me/parsingjson'
+                  target='_blank'>
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link waves-effect waves-light"
+                  href='https://www.linkedin.com/in/parsingjson'
+                  target='_blank'>
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link waves-effect waves-light"
+                  href='https://www.instagram.com/parsingjson'
+                  target='_blank'>
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link waves-effect waves-light"
+                  href='https://medium.com/@parsingjson'
+                  target='_blank'>
+                  <i class="fab fa-medium-m"></i>
+                </a>
+              </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- INTRO PAGE -->
+    <div id='intro' class="view jarallax" data-jarallax='{"speed": 0.2}'>
+      <div class='full-bg-img'>
+      <!-- Mask & flexbox options-->
+        <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
+          <!-- Content -->
+          <div class="container">
+            <!--Grid row-->
+            <div id='blurb' class="row">
+              <!--Grid column-->
+              <div class="col-md-12 mb-4 white-text text-center">
+                <h1 class="h2 white-text font-weight-
+                  bold mb-0 animated rollIn delay-1s">
+                  <strong>Hi, I'm Jason! </strong>
+                </h1>
+                <hr class="hr-light my-4 animated rollIn delay-1s">
+                <h3 class="h4 mb-4 white-text animated rollIn delay-1s">
+                  As a Web Developer, I help bring ideas to life on the Internet.
+                </h3>
+                <button id='intro-btn' type="button" class='btn btn-rounded btn-lg blue-gradient animated rollIn delay-1s'
+                onclick="location.href='#about'">Learn More</button>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </div>
+          <!-- Content -->
+        </div>
+      </div>
+      <!-- Mask & flexbox options-->
+    </div>
+
+  </header>
+  <main>
+    <div id='about' class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <div id='left'>
+            <h1>Jason L. Campbell</h1>
+            <img id='avatar' class='img-fluid' src='./src/images/myAvatar.svg'>
+            <h4>Web Developer</h4>
+          </div>
+        </div>
+        <div class="col">
+          <div id='summary'>
+            <p>I've always had a passion for technology, as much as I've always loved problem solving and learning. Those same characterstics that defined me in childhood, have stuck with me as an adult. My natural curiousity helps me keep up with the everchanging technologies of today, while I continuously work to improve my skills one development problem at a time. The best part of it all is I get to do what I love and create digital products!</p>
+          </div>
+          <div id='right' class="skills">
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 90%">
+                <div class="bar-label">
+                    HTML
+                </div>
+              </div>
+              <div class='pct'>90%</div>
+            </div>
+            <br>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 75%">
+                <div class="bar-label">
+                  CSS
+                </div>
+              </div>
+              <div class='pct'>75%</div>
+            </div>
+            <br>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 80%">
+                <div class="bar-label">
+                  JavaScript
+                </div>
+              </div>
+              <div class='pct'>80%</div>
+            </div>
+            <br>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 65%">
+                <div class="bar-label">
+                  Ruby
+                </div>
+              </div>
+              <div class='pct'>65%</div>
+            </div>
+            <br>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 75%">
+                <div class="bar-label">
+                  React
+                </div>
+              </div>
+              <div class='pct'>75%</div>
+            </div>
+            <br>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 60%">
+                <div class="bar-label">
+                  Rails
+                </div>
+              </div>
+              <div class='pct'>60%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="projects">
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-lg-4 col-md-12 mb-4">
+
+          <!--Modal: iBall-->
+          <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+
+              <!--Content-->
+              <div class="modal-content">
+                <!-- Header -->
+                <div class="modal-header">
+                  <div>
+                    <p class='headline'>
+                      <span class='h5'>iBall | </span>
+                      <ul class='tech'>
+                        <li>React</li>
+                        <li>Rails</li>
+                        <li>Semantic UI React</li>
+                        <li>Postgresql</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Mapbox</li>
+                        <li>JSON Web Tokens</li>
+                      </ul>
+                    </p>
+                  </div>
+                  <hr class='hr-dark'>
+                  <p>A community platform for pickup basketball. Users can utilize the map-based interface to find nearby basketball courts, view player activity, and to check-in and out of their current court.</p>
+                </div>
+                <!--Body-->
+                <div class="modal-body mb-0 p-0">
+
+                  <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/akw8EaHkdiY"
+                      allowfullscreen></iframe>
+                  </div>
+
+                </div>
+
+                <!--Footer-->
+                <div class="modal-footer text-center justify-content-center">
+                  <!-- <span class="mr-4">Spread the word!</span> -->
+                  <a type="button" target='_blank'
+                    href='https://github.com/parsingJSON35/iball-back-end'
+                    class="btn-floating btn-sm btn-fb"><i class="fab fa-github"></i>  Backend Code</a>
+                  <!--Twitter-->
+                  <a type="button" target='_blank'
+                    href='https://github.com/parsingJSON35/iball-front-end'
+                    class="btn-floating btn-sm btn-tw"><i class="fab fa-github-alt"></i>  Frontend Code</a>
+
+                  <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+
+                </div>
+
+              </div>
+              <!--/.Content-->
+
+            </div>
+          </div>
+          <!--Modal: iBall-->
+
+          <a><img class="img-fluid z-depth-1" src="src/images/iball.png" alt="video"
+              data-toggle="modal" data-target="#modal1"></a>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-lg-4 col-md-12 mb-4">
+
+          <!--Modal: CodeConnect-->
+          <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+
+              <!--Content-->
+              <div class="modal-content">
+                <!-- Header -->
+                <div class="modal-header">
+                  <div>
+                    <p class='headline'>
+                      <span class='h5'>CodeConnect | </span>
+                      <ul class='tech'>
+                        <li>React</li>
+                        <li>Rails</li>
+                        <li>Semantic UI React</li>
+                        <li>Postgresql</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Zipcode API</li>
+                      </ul>
+                    </p>
+                  </div>
+                  <hr class='hr-dark'>
+                  <p>An online community for paired programming. Users can search for partners to code with to teach or learn skills. Search can be filtered by type (mentore/mentee), programming language, or distance.</p>
+                </div>
+                <!--Body-->
+                <div class="modal-body mb-0 p-0">
+
+                  <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WrvI1TgJXUY"
+                      allowfullscreen></iframe>
+                  </div>
+
+                </div>
+
+                <!--Footer-->
+                <div class="modal-footer text-center justify-content-center">
+                  <!-- <span class="mr-4">Spread the word!</span> -->
+                  <a type="button" target='_blank'
+                    href='https://github.com/parsingJSON35/code-along'
+                    class="btn-floating btn-sm btn-fb"><i class="fab fa-github"></i>  Backend Code</a>
+                  <!--Twitter-->
+                  <a type="button" target='_blank'
+                    href='https://github.com/parsingJSON35/code-along-frontend'
+                    class="btn-floating btn-sm btn-tw"><i class="fab fa-github-alt"></i>  Frontend Code</a>
+
+                  <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+
+                </div>
+
+              </div>
+              <!--/.Content-->
+
+            </div>
+          </div>
+          <!--Modal: CodeConnect-->
+
+          <a><img class="img-fluid z-depth-1" src="src/images/codeconnect.png" alt="video"
+              data-toggle="modal" data-target="#modal2"></a>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-lg-4 col-md-12 mb-4">
+
+          <!--Modal: uReview-->
+          <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+
+              <!--Content-->
+              <div class="modal-content">
+                <!-- Header -->
+                <div class="modal-header">
+                  <div>
+                    <p class='headline'>
+                      <span class='h5'>uReview | </span>
+                      <ul class='tech'>
+                        <li>JavaScript</li>
+                        <li>Rails</li>
+                        <li>Semantic UI</li>
+                        <li>Postgresql</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>IMDB API</li>
+                      </ul>
+                    </p>
+                  </div>
+                  <hr class='hr-dark'>
+                  <p>A simple movie review and tracker app. Users can register accounts and track movies by logging a review.</p>
+                </div>
+                <!--Body-->
+                <div class="modal-body mb-0 p-0">
+
+                  <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wtuRP2TakwE"
+                      allowfullscreen></iframe>
+                  </div>
+
+                </div>
+
+                <!--Footer-->
+                <div class="modal-footer text-center justify-content-center">
+                  <!-- <span class="mr-4">Spread the word!</span> -->
+                  <a type="button" target='_blank'
+                    href='https://github.com/parsingJSON35/module-3-project'
+                    class="btn-floating btn-sm btn-fb"><i class="fab fa-github"></i>  Backend Code</a>
+                  <!--Twitter-->
+                  <a type="button" target='_blank'
+                    href='https://github.com/parsingJSON35/module-3-project-front-end'
+                    class="btn-floating btn-sm btn-tw"><i class="fab fa-github-alt"></i>  Frontend Code</a>
+
+                  <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+
+                </div>
+
+              </div>
+              <!--/.Content-->
+
+            </div>
+          </div>
+          <!--Modal: uReview-->
+
+          <a><img class="img-fluid z-depth-1" src="src/images/uReview.png" alt="video"
+              data-toggle="modal" data-target="#modal3"></a>
+
+        </div>
+        <!-- Grid column -->
+    </div>
+  </main>
+  <footer class='text-center'>
+    <span>Coded by Jason L. Campbell ©2019</span>
+  </footer>
+
+  <!-- JQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.1/js/mdb.min.js"></script>
+</body>
+
+</html>
